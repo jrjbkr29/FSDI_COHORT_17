@@ -1,0 +1,28 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.header-in{
+    background-image:url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    text-align: center;
+    
+    
+}
+
+h1{
+    font-size: 48px;
+}
+
+button{
+    font-weight: bolder;
+    font-size: 16px;
+    
+
+}
+h2{
+    text-align: center;
+    text-emphasis: bolder;
+}

@@ -1,0 +1,17 @@
+p{
+    background-color:rgb(189, 189, 189);
+    color:white;
+}
+.myP{
+    background-color: blue;
+    color:white;
+    text-transform: lowercase;
+
+}
+#myHeader{
+    text-transform: capitalize;
+    text-align: center;
+    color: grey;
+    background: rgba(0, 128, 0, 0.205);
+    word-spacing: 10px;
+}
