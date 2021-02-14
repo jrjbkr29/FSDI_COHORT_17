@@ -1,28 +1,169 @@
+/*lets you change all the code with a few variables instead of changing every line*/
+:root{
+    --primary:#ffcc11;
+    --seconday:#0097a7;
+}
+/*global*/
 body{
     font-family: 'Lato', sans-serif;
 }
 
+/*header*/
 .header-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image:url(../img/hero.jpg);
     background-size: cover;
     background-position: center center;
-    height: 300px; /*adjusted height to fit content better */
+    height: 300px; /*adjusted pixel size to fit content */
+    text-align: center;  
+}
+
+.header-in p{
+    font-size:22px;
+    background-color: rgba(245, 245, 245, 0.534);
+}
+
+.header-in p i{
+    color:var(primary);
+    margin-left: 25px;
+    margin-right:10px;
+}
+
+/*menu*/
+.menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(248, 248, 248);
+    padding: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+    text-decoration:none;
     text-align: center;
-    
-    
+    margin-top: 10px;
+    margin-left: auto;
+    display:inline-block;
+    width: 250px;  
 }
 
 h1{
     font-size: 48px;
+    background-color: rgba(245, 245, 245, 0.534);
+}
+
+h2,h3,h4{
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+p{
+    line-height: 2;
+    background-color: whitesmoke;
 }
 
 button{
     font-weight: bolder;
-    font-size: 16px;
-    
-
+    font-size: 16px;   
 }
+
 h2{
     text-align: center;
     text-emphasis: bolder;
 }
+
+a:hover{
+    background-color: rgba(187, 187, 187, 0.39);
+    text-transform:uppercase;
+    color: rgb(0, 0, 0);
+    border-color:rgb(216, 214, 210);
+}
+
+ul{
+    background-color: rgb(255, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    list-style: circle;
+    }
+
+ul li{
+    color: white;
+    background-color: rgb(83, 0, 0);
+    margin: 5px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+ol{
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+}
+
+ol li{
+    background-color: rgb(0, 34, 0);
+    margin: 10px;
+    padding: 10px;
+    color:white;
+}
+
+.btn{
+    background-color:var(--secondary);
+    color:white;
+    font-weight: 700;
+    padding-right: 50px;
+    padding-left:50px;
+    border-radius: 5px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+#privacy{
+    float: left;
+}
+
+#copyright{
+    float:none;
+    position:absolute;
+    left: 50%;
+}
+
+#terms{
+    float:right;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/about.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 250px; /*adjusted pixel size to fit content */
+    width: 250px;
+    text-align: center;  
+  }
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
