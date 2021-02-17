@@ -5,70 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="project.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap">
     <link rel="stylesheet" href="../css/project.css">
-    <title>Practice</title>
+    <title>FSDI</title>
 </head>
 
 <body>
-    <header class="header-in">
-        <h1>Web Design and Development</h1>
-        <!--
-        example of inline css
-        <p style="font-weight: bold;"><i class="fas fa-map-marker-alt"></i>
-            Los Angeles, CA</p>
-    
-            <button><a href="../index.html">Home</a>
-            </button>
-    
-            <button><a href="../Bio.html">Bio</a>
-            </button>
-    
-            <button class="navButtons"><a href="../contact.html">Contact</a></button>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header class="header-in">
+                <h1>
+                    Web Design and Development
+                </h1>
 
-            <a href="http://google.com" target="blank" >Google</a>
-                       
-        </header>
-        -->
-    <main>
-        <nav class="menu">
-            <a href= "index.html">Home</a>
-            <a href= "bio.html">About</a>
-            <a href= "contact.html">Contact</a>
-            <a href= "projects.html">Projects</a>
-        </nav>
-        
-        <h2>Bio</h2>
+                <!--example of inline css -->
+                <p style="font-weight: bold; padding-right: 25px;"><i class="fas fa-map-marker-alt"></i>
+                    Los Angeles, CA
+                </p>
+                
+            </header>
 
-        <h3>Background</h3>
+            <nav class="menu">
+                <div class="center"><a href="index.html">Home</a>
+                    <a href="bio.html">About</a>
+                    <a href="#">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+            </nav>
 
-        <p>
-            Started career in the miliatry as an Avionics mechanic for the US Army working on Blackhawk and Chinook helicopters. After the military went to work for SpaceX in the Space Simulation Lab testing critical components to ensure the design could survive the environments to and in space. After four years transitioned to a senior position at a small startup called Virgin Orbit. Currently an aspiring software developer while juggling a full time job and a family life with two kids.
-        </p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <!--ul>li*5 is an example of how to add a list item quickly-->
-        <ol>
-            <li><a href="footer">List item 1</a></li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-        <h4>Goal</h4>
+            <main class="container">
+                <h2>
+                    Our services
+                </h2>
+                <div class="services-container">
 
-        <p>To provide full stack web development services in a wide range of industries and specialize in creating tools to automate, consolidate, and organize data.</p>
+               
+                <div class="service">
 
+
+           <!--webdesign-->
+            <h3>
+                Web Design
+            </h3>
+        </div>
+                <i class="fab fa-html5"></i>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestias eveniet recusandae, dolor totam obcaecati nisi rem itaque amet eos dolore animi provident aut natus modi. Magni molestias sint iste?
+                </p>
+
+            <!--mobile-->
+            <h3>
+                Mobile Apps
+            </h3>
+            <i class="fab fa-android"></i>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestias eveniet recusandae, dolor totam obcaecati nisi rem itaque amet eos dolore animi provident aut natus modi. Magni molestias sint iste?
+                </p>
+
+            <!--social media-->
+            <h3>
+                Social Media
+            </h3>
+            <i class="fab fa-facebook-square"></i>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestias eveniet recusandae, dolor totam obcaecati nisi rem itaque amet eos dolore animi provident aut natus modi. Magni molestias sint iste?
+                </p>
+           
+        </div>
+        <h2>Contact</h2>
+        <form class="form-msg" action="#">
+            <p>
+                <label for="name">
+                    Name:
+                </label>
+                <input name="name" type="text">
+            </p>
+            <p>
+                <label for="email">
+                    Email:
+                </label>
+                <input type="text" name="email" id="">
+             </p>
+             <p>
+                <label for="msg">
+                    Comments:
+                </label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                
+             </p>
+
+             <button class btn>
+                 Send
+             </button>
+
+        </form>
+    </div>
     </main>
+        <footer id="footer">
+            <nav>
+                <a id="privacy" href="#">Privacy</a>
+                <a id="copyright" href="#">Copyright Info</a>
+                <a id="terms" href="#">Terms</a>
+            </nav>
 
-    <footer> 
-
-
-    </footer>
-    
+        </footer>
+    </div>
 </body>
-
-</html>

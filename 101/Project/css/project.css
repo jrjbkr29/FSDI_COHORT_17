@@ -1,23 +1,29 @@
-/*lets you change all the code with a few variables instead of changing every line*/
+/*lets you change code with a few variables instead of changing every line*/
 :root{
     --primary:#ffcc11;
-    --seconday:#0097a7;
+    --secondary:#0097a7;
 }
+
 /*global*/
 body{
     font-family: 'Lato', sans-serif;
 }
 
+/*applies to every tag to remove browser defaults*/
+*{
+    margin:0;
+    padding: 0;
+}
+
 /*header*/
 .header-in{
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
     align-items: center;
     background-image:url(../img/hero.jpg);
     background-size: cover;
     background-position: center center;
-    height: 300px; /*adjusted pixel size to fit content */
+    height: 300px;
     text-align: center;  
 }
 
@@ -32,21 +38,27 @@ body{
     margin-right:10px;
 }
 
+.menu{
+    background-color:white;
+}
+
+@media(min-width:768px){
+    .menu{
+        display:flex;
+        justify-content:space-between;
+    }
+}
+
 /*menu*/
 .menu a{
-    font-size: 20px;
-    text-decoration: none;
+    display:block;
     color: rgb(0, 0, 0);
-    background-color: rgb(248, 248, 248);
-    padding: 20px;
-    border: 1px solid black;
+    font-size: 24px;
+    text-decoration: none;
     font-weight: bold;
     text-decoration:none;
     text-align: center;
-    margin-top: 10px;
-    margin-left: auto;
-    display:inline-block;
-    width: 250px;  
+    margin: 20px;
 }
 
 h1{
@@ -59,30 +71,37 @@ h2,h3,h4{
     background-color: whitesmoke;
 }
 
+h2{
+    text-align: center;
+    text-emphasis: bolder;
+    margin-top:30px;
+    font-size: 28px;
+}
+
+#h2-bio{
+    background-color: white;
+}
+
+h3, h4{
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
 p{
     line-height: 2;
     background-color: whitesmoke;
 }
 
-button{
-    font-weight: bolder;
-    font-size: 16px;   
-}
-
-h2{
-    text-align: center;
-    text-emphasis: bolder;
-}
-
 a:hover{
-    background-color: rgba(187, 187, 187, 0.39);
+    background-color: rgba(187, 187, 187, 0.158);
     text-transform:uppercase;
     color: rgb(0, 0, 0);
     border-color:rgb(216, 214, 210);
 }
 
 ul{
-    background-color: rgb(255, 0, 0);
+    background-color: var(--primary);
     margin: 10px;
     padding: 10px;
     list-style: circle;
@@ -110,19 +129,112 @@ ol li{
 }
 
 .btn{
-    background-color:var(--secondary);
-    color:white;
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-weight: 700;
+    font-size: 24px;
     padding-right: 50px;
-    padding-left:50px;
+    padding-left: 50px;
     border-radius: 5px;
+    margin-left: 0;
+    height: 45px;
+    width: 100%;
 }
 
-#footer {
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap{
+  padding-bottom: 2.5rem; 
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/about.png);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 250px;
+    text-align: center;  
+  }
+
+/*services*/
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding:10px;
+}
+.service i{
+  display: flex;
+  font-size: 40px;
+  background-color: var(--primary);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  justify-content: center; /*horizontally*/
+  align-items: center;/*vertically*/
+}
+
+/*form*/
+.form-msg{
+    background-color:slategrey;
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.form-msg p{
+  display: flex;
+  padding: 5px;
+}
+
+input{
+    font-size: 18px;
+    width: 80%;
+    margin-left: 0px;
+}
+label{
+    width:150px;
+    margin-left: 20px;
+}
+
+textarea{
+    width:80%;
+    height: 80px;
+}
+
+.btn-form{
+    background-color: gray;
+    font-size: 25px;
+    border:none;
+    color:black;
+}
+
+.container{
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* Footer height */
+    height: 2.5rem;/* Footer height */
   }
 
 #privacy{
@@ -138,32 +250,3 @@ ol li{
 #terms{
     float:right;
 }
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  #bio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image:url(../img/about.jpeg);
-    background-size: cover;
-    background-position: center center;
-    height: 250px; /*adjusted pixel size to fit content */
-    width: 250px;
-    text-align: center;  
-  }
-
-  #page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
