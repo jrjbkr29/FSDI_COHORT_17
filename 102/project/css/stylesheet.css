@@ -1,0 +1,210 @@
+
+/* global*/
+html{
+    font-size:62.5%;/* reset the html*/
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Roboto, sans-serif";
+}
+
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 4rem;
+
+}
+
+h3{
+    font-size:3.2rem;
+
+}
+
+h4{
+    font-size:2.8rem;
+}
+
+p{
+    font-size:1.6rem;
+    line-height: 2;/*double space*/
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/*utilities*/
+.center{
+text-align: center;
+}
+
+.container{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn{
+    display:block;
+    text-align: center;
+    padding:1rem;
+    margin:2rem 0;/*topandbottom then right and left*/
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:2rem;
+}
+
+/*header*/
+.header-container{
+    background-image: url(../images/banner.jpg);
+    height: 60vh;
+    background-size:cover;
+    background-position: center center;
+    color:white;
+    padding-top:0rem;
+}
+
+.header-container h1 a{
+    text-decoration: none;
+    color:white;
+}
+
+
+nav{
+    text-align:center;
+    padding-top:0rem;
+    font-size:2rem;
+}
+
+nav a{
+    display:block;
+    font: size 2.2rem;
+    padding: 2rem;
+    color:white;
+    text-decoration:none;
+    margin-bottom: 2rem;
+}
+
+
+.site-header{
+    padding:0rem;
+}
+.site-header p{
+    font-size: 2.8rem;
+    margin-top:1.5rem;
+}
+
+.btn-read{
+    background-color:black;
+    color:white;
+}
+
+.site-footer{
+    background-color: black;
+    margin-top:4rem;
+    padding:3rem;
+}
+
+.site-footer p a{
+    font-size:4rem;
+    color:white;
+    text-decoration: none;
+}
+
+.contact-form .field{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.contact-form{
+    background-color: white;
+    padding:5rem;
+}
+.contact-form .field label{
+    font-size:1.6rem;
+    flex:0 0 8rem; /*same as using flex basis but shorthand */
+}
+
+.contact-form .field input[type="text"], .contact-form .field input[type="email"],
+.contact-form .field textarea{
+    border:1px solid #e1e1e1;
+    padding:1rem;
+    font-size:1.6rem;
+    flex:1;
+}
+
+.contact-form .field textarea{
+    height:20rem;
+}
+
+.contact-form .btn-send{
+    background-color: black;
+    color:white;
+}
+
+.send{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.form-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(min-width:768px){
+    nav a{
+        display:inline-flex;
+        font: size 2.2rem;
+        padding: 2rem;
+        color:white;
+        text-decoration:none;
+        margin-bottom: 2rem;
+    }
+    .flex-container-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+    }
+    
+    .flex-element-nav{
+        background-color:none;
+        color:white;
+        padding: 0;
+        margin-right: 0%;
+        border: none;
+        width: 450px;
+        height: 50px;
+    }
+        
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 20rem;
+    }
+    
+    .flex-element {
+        background-color:none;
+        color:white;
+        padding: 0rem;
+        border: none;
+        width: 100%;
+        height: 5rem;
+    }
+}
