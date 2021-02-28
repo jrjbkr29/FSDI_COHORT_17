@@ -10,65 +10,67 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
-<body>  
+<body> 
     <header class="header-container">
-        <div class="container site-header flex-container-nav">
-                <div class="flex-element-h1">
+        <div class="site-header container">
+                <div class="bar">
                     <h1 class="center"><a href="index.html">Coffee<strong>Blog</strong></a></h1>
+           
+                    <nav class="menu">
+                        <a href="about.html">About Us</a>
+                        <a href="courses.html">Courses</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
                 </div>
 
-            <div class="flex-element-nav">
-                <nav>
-                    <a href="about.html">About Us</a>
-                    <a href="courses.html">Courses</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
+            <div class="text-header">
+                <h2 class="center">Coffee Blog with tips and courses</h2>
+                <p class="center">Learn from the experts with the best recipes</p>
             </div>
         </div>
-
-        <div>
-            <div class="flex-container">
-                <h2 class="center flex-element">Coffee Blog with tips and courses</h2>
-                <p class="center flex-element">Learn from the experts with the best recipes</p>
-            </div>
-        </div>
-
     </header>
 
     <main class="container">
         <h2 class="center">Contact</h2>
 
-        <div class="form-img">
-            <img src="images/contact.jpg" alt="several cups of coffee">
-        </div>
+        <div class="form-flex center-elements">
+            <div class="complete center">
+                <img src="images/contact.jpg" alt="several cups of coffee">
+            </div>
 
-        <div class="contact-form">
-            <form action="a">
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="username">
-                </div>
+            <div class="contact-form portion-6">
+                <form action="#">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="username">
+                    </div>
 
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email"> 
-                </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"> 
+                    </div>
 
-                <div class="field">
-                    <label for="msg">Message</label>
-                    <textarea name="msg" id="msg"></textarea>
+                    <div class="field">
+                        <label for="msg">Message</label>
+                        <textarea name="msg" id="msg"></textarea>
+                    </div>
+                </form>
+
+                <div class="send">
+                    <input class="btn btn-send" type="submit" value="send">
                 </div>
-            </form>
-            <div class="send">
-                <input class="btn btn-send" type="submit" value="send">
             </div>
         </div>
     </main>
-    <footer class="site-footer center">
-        <p><a href="index.html">Coffee<strong>Blog</strong></a></p>
-        <nav>
+
+    <footer class="site-footer">
+        <p class="center"><a href="index.html">Coffee<strong>Blog</strong></a></p>
+
+        <nav class="#">
             <a href="about.html">About Us</a>
+
             <a href="courses.html">Courses</a>
+
             <a href="contact.html">Contact</a>
         </nav>
     </footer>
