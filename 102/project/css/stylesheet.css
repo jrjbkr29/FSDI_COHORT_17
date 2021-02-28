@@ -1,7 +1,7 @@
 
-/* global*/
+/* global */
 html{
-    font-size:62.5%;/* reset the html*/
+    font-size:62.5%;/* reset the html */
 }
 
 *{
@@ -32,14 +32,14 @@ h4{
 
 p{
     font-size:1.6rem;
-    line-height: 2;/*double space*/
+    line-height: 2;/* double space */
 }
 
 img{
     max-width: 100%;
 }
 
-/*utilities*/
+/* utilities */
 .container{
     width:80%;
     margin-right: auto;
@@ -60,7 +60,7 @@ img{
     text-align: center;
 }
 
-/*header*/
+/* header */
 .header-container{
     background-image: url(../images/banner.jpg);
     height: 50vh;
@@ -144,7 +144,7 @@ nav a{
     color:white;
 }
 
-/*blog & courses section*/
+/* blog & courses section */
 .main-container{
     display: flex;
     flex-wrap:wrap;
@@ -161,16 +161,25 @@ nav a{
 }
 
 .blog, .courses{
-    flex-basis:100%;
+    flex-basis:0 0 100%;
 }
 
 .courses{
     order:-1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courses ul{
+    list-style: none;
+}
+
+.courses a{
+    background-color: rgb(109, 49, 7);
 }
 
 @media(min-width:768px){
     .main-container{
-        /*flex-direction: column;*/
         justify-content: space-between;
     }
     .blog{
@@ -179,10 +188,11 @@ nav a{
     .courses{
         flex-basis:calc(33.3% - 4rem);
         order: 2;
+        padding-left: 0;
     }
 }
 
-/*footer*/
+/* footer */
 .site-footer{
     background-color: black;
     margin-top:4rem;
@@ -209,7 +219,7 @@ nav a{
     }
 }
 
-/*contact*/
+/* contact */
 .contact-form{
     background-color: white;
     padding:5rem;
@@ -223,7 +233,7 @@ nav a{
 
 .contact-form .field label{
     font-size:1.6rem;
-    flex:0 0 8rem; /*same as using flex basis but shorthand */
+    flex:0 0 8rem; /* flex basis shorthand */
 }
 
 .contact-form .field input[type="text"], .contact-form .field input[type="email"],
@@ -273,7 +283,7 @@ nav a{
     }
 }
 
-/*about us*/
+/* about us */
 @media(min-width:768px){
     .grid{
         display: grid;
@@ -294,149 +304,27 @@ nav a{
     text-align: justify;
 }
 
-/* the end of video code and start of user code
-
-.flex-container-about{
-    display:flex;
-    flex-direction: column;
-    height:auto;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    padding-top: 2rem;
-    border: 1rem;
+/* courses section */
+.course-container h3{
+     margin: 2rem;
+}
+.course-container article img{
+    height: 60rem;
+    width: 75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.flex-element-about{
-    background-color:none;
-    color:rgb(0, 0, 0);
-    padding: 0;
-    margin-right: 0%;
-    border: none;
-}
-
-@media(min-width:768px){
-    nav a{
-        display:inline-flex;
-        font: size 2.2rem;
-        padding: 2rem;
-        color:white;
-        text-decoration:none;
-        margin-bottom: 2rem;
-    }
-    .flex-container-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        padding-top: 2rem;
-        border:1rem;
-    }
-    
-    .flex-element-nav{
-        background-color:none;
-        color:white;
-        padding: 0;
-        margin-right: 0%;
-        border: none;
-        width: 450px;
-        height: 50px;
-    }
-        
-    .flex-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-top: 20rem;
-    }
-    
-    .flex-element {
-        background-color:none;
-        color:rgb(255, 255, 255);
-        padding: 0rem;
-        border: none;
-        width: 100%;
-        height: 5rem;
-    }
-/*
-    .flex-container-about{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        padding-top: 2rem;
-        border: 1rem;
-        width:80%;
-    }
-    
-    .flex-element-about{
-        background-color:none;
-        color:rgb(0, 0, 0);
-        padding: 0;
-        margin-right: 0%;
-        border: none;
-        width: 50%;
-        height: 50%;
-    }
-    
-}
-*/
-/* blog section*/
-
-
-/*
-styles that i need to add when review video
-
-contact-img{
-    margin-right: auto;
+table{
+    font-size: 24px;
     margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-@media(min-width:768px){
-    .complete{
-        flex-basis: 100%;
-    }
-
-    .contact-form{
-    margin-top:-10rem;
-    }
-    .form-flex{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-}
-.portion-6{
-    flex-basis: calc(66.6%-1rem);
-    
-*/
-
-/*grid to achieve the about seperation instead of flex*/
-/*
-@media(min-width:768px){
-    .grid{
-        display:grid;
-        grid-template-columns: 50% 50%;
-        column-gap: 2rem;
+@media(min-width="768px"){
+    table{
+        font-size: 18px;
     }
 }
-
-.grid .grid-img{
-    margin:3rem 0;
-}
-
-.grid-text p{
-    text-align:justify;
-    }
-    .grid-text{
-        margin:3rem;
-    }
-
-
-
-        
-
-
-
-*/
