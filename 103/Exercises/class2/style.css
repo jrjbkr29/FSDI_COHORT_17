@@ -1,0 +1,17 @@
+.p1{
+    margin-bottom: 50px;
+}
+
+.p2{
+    margin-top:25px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.alert{
+    color: red;
+    border: 1px solid red;
+    padding:3px;
+}
