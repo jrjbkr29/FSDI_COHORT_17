@@ -10,8 +10,8 @@ function display(aPet){
                     <p> Breed: ${aPet.breed}</p>
                     <p> Service: ${aPet.service}</p>
                     <p> Owner: ${aPet.owner}</p>
-                    <p> Phone: ${aPet.number}</p>
-                    <p> Payment Method: ${aPet.pay}</p>
+                    <p> Phone: ${aPet.phoneNum}</p>
+                    <p> Payment Method: ${aPet.paymentMethod}</p>
                 </div>
                 `;
                 document.getElementById("pets").innerHTML+=tmp;
@@ -29,8 +29,8 @@ function displayTable(aPet){
                 <td class="pet-table-cell">${aPet.breed}</td>
                 <td class="pet-table-cell">${aPet.service}</td>
                 <td class="pet-table-cell">${aPet.owner}</td>
-                <td class="pet-table-cell">${aPet.phone}</td>
-                <td class="pet-table-cell">${aPet.pay}</td>
+                <td class="pet-table-cell">${aPet.phoneNum}</td>
+                <td class="pet-table-cell">${aPet.paymentMethod}</td>
             </tr>    
             `;
             document.getElementById('pet-table').innerHTML+=tmp;

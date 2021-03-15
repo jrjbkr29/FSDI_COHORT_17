@@ -17,8 +17,8 @@ const salon = {
             breed: "Dane",
             service: "Shower",
             owner: "Shaggy",
-            phone: "555-555-5555",
-            paymentMethod: "Online Checkout"
+            phoneNum: "555-555-5555",
+            paymentMethod: "Online Payment"
         },
         {
             name: "Scrappy",
@@ -27,8 +27,8 @@ const salon = {
             breed: "Dane",
             service: "Nails cut",
             owner: "Shaggy",
-            phone: "555-555-5555",
-            paymentMethod: "Cash"
+            phoneNum: "555-555-5555",
+            paymentMethod: "Cash/Card"
         },
         {
             name: "Rocco",
@@ -37,8 +37,8 @@ const salon = {
             breed: "Doberman",
             service: "Full Service",
             owner: "Shaggy",
-            phone: "555-555-5555",
-            paymentMethod: "Online Checkout"
+            phoneNum: "555-555-5555",
+            paymentMethod: "Online Payment"
         },
         {
             name: "Nala",
@@ -47,8 +47,8 @@ const salon = {
             breed: "Lion",
             service: "Full Service",
             owner: "Shaggy",
-            phone: "555-555-5555",
-            paymentMethod: "Cash"
+            phoneNum: "5555555555",
+            paymentMethod: "Cash/Card"
         }
     ]
 }
@@ -77,18 +77,17 @@ displayInfo();
 
 //object constructor
 class Pet{
-    constructor(name, age, gender, breed, service, owner, phone, paymentMethod){
+    constructor(name, age, gender, breed, service, owner, phoneNum, paymentMethod){
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.breed = breed;
         this.service = service;
         this.owner = owner;
-        this.phone = phone;
+        this.phoneNum = phoneNum;
         this.paymentMethod = paymentMethod;
     }
 }
-//create register function
 
 //get the value from inputs and store them in vars
 var txtName = document.getElementById("petName");
