@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Pet Salon</title>
+</head>
+<body>
+    <header>
+        <div class="site-header-container">
+            <h1>The Pet Salon</h1>
+            <nav>
+                <a href = "index.html">Home</a>
+                <a href = "about.html">About</a>
+                <a href = "services.html">Services</a>
+                <a href = "register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="grid-container center">
+            <h2>About Us</h2>
+            <table>
+                <tr>
+                    <td><button class = "carousel-control-prev" onclick="caruselScroll(0)">&#8249</button></td>
+                    <td><img class="aboutImage center" id="caruselImage" src="/img/carusel1.jpg" alt="Image of dog"></td>
+                    <td><button class = "carousel-control-next" onclick="caruselScroll(1)">&#8250</button></td>
+                </tr>
+            </table>
+            <caption>
+                <h3 id="imgHeading">Mission Statement</h3>
+                <p id="imgDesc">To pamper your pet and provide the best grooming services</p>
+            </caption>
+        
+            <div class="grid-container contactUsCont">
+                <h2>Contact Us</h2>
+                <p class="grid-container">
+                    <label for="contactname">Name:*</label>
+                    <input class="form-control" type="text" name="contactName" id="contactName">
+                </p>
+                <p class="grid-container">
+                    <label for="contactEmail">Email:*</label>
+                    <input class="form-control" type="text" name="contactEmail" id="contactEmail">
+                </p>
+                <p class="grid-container">
+                    <label for="contactMess">Message:*</label>
+                    <input class="form-control" type="text" name="contactMess" id="contactMess">
+                </p>
+                <button type="button" class="btn btn-warning" onclick="contactUs()">Send Message</button>
+            <article class="center">
+                <h3>FAQ</h3>
+                <h4><strong>Lorem, ipsum dolor sit?</strong></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis magni in incidunt! Vel ex, placeat dignissimos eaque reiciendis aliquam illum tenetur dolorum iure culpa, id iste. Voluptates commodi provident maxime!</p>
+                <h4><strong>Lorem, ipsum dolor sit?</strong></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis magni in incidunt! Vel ex, placeat dignissimos eaque reiciendis aliquam illum tenetur dolorum iure culpa, id iste. Voluptates commodi provident maxime!</p>
+                <h4><strong>Lorem, ipsum dolor sit?</strong></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis magni in incidunt! Vel ex, placeat dignissimos eaque reiciendis aliquam illum tenetur dolorum iure culpa, id iste. Voluptates commodi provident maxime!</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="grid-container">
+        <p id="footer-info"></p> 
+    </footer>
+    <script src="jquery-1.12.0.min.js"></script>
+    <script src="js/about.js"></script>
+
+</body>
+</html>
