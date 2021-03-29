@@ -3,19 +3,19 @@ var caruselImgPos = 1;
 const aboutUs = {
     carusel1:{
         position: 1,
-        image: "../img/carusel1.jpg",
+        image: "/img/carusel1.jpg",
         title: "Mission Statement",
         caption: "To pamper your pet and provide the best grooming services"
     },
     carusel2:{
         position: 2,
-        image: "../img/carusel2.jpg",
+        image: "/img/carusel2.jpg",
         title: "Our History",
         caption: "Lorem History etc History ipsum dolor sit, amet consectetur adipisicing elit. Quod aliquam vitae dignissimos quisquam cum delectus"
     },
     carusel3:{
         position: 3,
-        image: "../img/carusel3.jpg",
+        image: "/img/carusel3.jpg",
         title: "About the Developer",
         caption: "Lorem devolper info ipsum dolor sit, amet consectetur adipisicing elit. Quod aliquam vitae dignissimos quisquam cum delectus"
     }
