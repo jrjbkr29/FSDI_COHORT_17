@@ -3,7 +3,7 @@ function saveToDo() {
     // get the text from the input field
     var todo = $('#todotext').val();
     // create DOM element
-    var syntax = "<></><li class=list-group-item>" + todo + "</li>";
+    var syntax = "<li class=list-group-item>" + todo + "</li>";
     $('#pendingTodos').append(syntax);
 
     // clear the text
