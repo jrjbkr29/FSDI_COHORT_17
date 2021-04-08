@@ -1,0 +1,92 @@
+
+body {
+    overflow:auto;
+    height: 100%;
+    background: rgb(122,121,138);
+background: linear-gradient(0deg, rgba(122,121,138,1) 0%, rgba(242,242,242,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+h1 {
+    color:rgb(245, 245, 245);
+    background: black;
+    padding-left: 1rem;
+    text-align: center;
+}
+
+#list {
+    overflow: auto;
+    width: 100%;
+}
+
+#details {
+    padding-left: 25px;
+    text-align: left;
+}
+
+#pendingTasks {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#iconImp {
+    font-size: 25px;
+}
+
+#iconImp.far {
+    color: rgb(0, 217, 255);
+}
+
+#iconImp.fas {
+    color: rgb(248, 51, 1);
+}
+
+.task {
+    color: rgb(0, 0, 0);
+    width: auto;
+    border: 1px solid #cecece;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-left: 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 100%, rgba(255,255,255,1) 100%);
+    border-radius: 6px;
+    text-align: left;
+}
+
+footer {
+    background-color: black;
+    margin-top: 25px;
+}
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+    h1 {
+        text-align: left;
+    }
+
+    #list a {
+        display: none;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90vh;
+    }
+    
+    .body {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        overflow:auto;
+    }
+
+    #pendingTasks {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
