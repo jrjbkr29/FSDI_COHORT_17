@@ -15,11 +15,11 @@ namespace intro
             float maxOfNum2 = float.Parse(Console.ReadLine());
             System.Console.WriteLine("Enter your third number:");
             float maxOfNum3 = float.Parse(Console.ReadLine());
-
             float maxOfThreeNum = p.MaxOfThree(maxOfNum1, maxOfNum2, maxOfNum3);
             System.Console.WriteLine("The greatest number is: " + maxOfThreeNum);
             System.Console.WriteLine("Press enter to continue...");
             Console.ReadLine();
+            
             System.Console.WriteLine("");
             System.Console.WriteLine("-----------------------------");
             System.Console.WriteLine("Examples from class below this line");
