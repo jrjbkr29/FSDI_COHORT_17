@@ -1,5 +1,0 @@
-HTML
-JS
-CSS
-jQuery
-Python
