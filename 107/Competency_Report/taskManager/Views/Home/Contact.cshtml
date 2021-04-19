@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" ;
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/css/app.css">
+
+<body>
+    <div id="alertDesc" class="alert alert-warning hide" role="alert">
+        <p><b>Error:</b> Please fill out all entries</p>
+    </div>
+    <main class="containertwo">
+        <div class="control">
+            <label>Name:</label>
+            <input id="txtName" type="text" class="form-control">
+            <div id="alertName" class="alert alert-warning hide" role="alert">
+                <b>Error:</b> Please enter a name.
+            </div>
+        </div>
+
+        <div class="control">
+            <label>Email:</label>
+            <input id="txtEmail" type="text" class="form-control">
+            <div id="alertEmail" class="alert alert-warning hide" role="alert">
+                <b>Error:</b> Please enter a valid email(myemail&commatdomain.com).
+            </div>
+        </div>
+
+        <div class="control">
+            <label>Message:</label>
+            <input id="txtMessage" type="text" class="form-control">
+            <div id="alertMessage" class="alert alert-warning hide" role="alert">
+                <b>Error:</b> Please enter a message greater than 5 characters.
+            </div>
+        </div>
+        <div class="control">
+            <button id="btnContact" class="btn btn-primary">Send Message</button>
+        </div>
+        <div id="alertSuccess" class="alert alert-success hide" role="alert">
+            Message sent to database!
+        </div>
+        <div id="alertError" class="alert alert-danger hide" role="alert">
+            Error: Message not submitted!
+        </div>
+    </main>
+    <script src="/js/contact.js"></script>
+</body>
